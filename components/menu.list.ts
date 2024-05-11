@@ -1,12 +1,14 @@
 export interface IMenuItem {
 	name: string;
 	url: string;
+	icon?: string;
 }
 
 export const MENU_ITEM_LIST: IMenuItem[] = [
 	{
-		name: 'home',
+		name: '',
 		url: '/',
+		icon: 'radix-icons:home',
 	},
 	{
 		name: 'javascript',

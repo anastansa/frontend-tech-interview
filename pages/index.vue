@@ -1,7 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-	<div> HOME PAGE</div>
+	<div class="page"> HOME PAGE</div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.page {
+	padding: 0 50px;
+}
+</style>

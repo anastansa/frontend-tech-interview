@@ -7,6 +7,7 @@ import { MENU_ITEM_LIST } from './menu.list';
 		<nav class="menu">
 			<NuxtLink v-for="item in MENU_ITEM_LIST" :key="item.name" :to="item.url" class="menu__item">
 				{{ item.name }}
+				<Icon v-if="item.icon" :name="item.icon" />
 			</NuxtLink>
 		</nav>
 	</div>
@@ -16,6 +17,7 @@ import { MENU_ITEM_LIST } from './menu.list';
 .menu {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	gap: 15px;
 	width: 50%;
 	margin: 0 auto;
