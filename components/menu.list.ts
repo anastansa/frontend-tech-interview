@@ -34,4 +34,9 @@ export const MENU_ITEM_LIST: IMenuItem[] = [
 		name: 'react',
 		url: '/react',
 	},
+	{
+		name: '',
+		url: '/favorite',
+		icon: 'radix-icons:heart-filled',
+	},
 ];

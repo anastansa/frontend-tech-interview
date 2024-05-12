@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import QuestionList from '../components/question/question-list.vue';
-import { JAVASCRIPT_QUESTION_LIST } from '../mock/javascript.data';
+import { QUESTION_LIST } from '../mock/mock.data';
 </script>
 
 <template>
 	<div class="page">
-		<QuestionList :list="JAVASCRIPT_QUESTION_LIST" />
+		<!--TODO replace mock data-->
+		<QuestionList :list="QUESTION_LIST.filter((item) => item.category_name === 'javascript')" />
 	</div>
 </template>
 

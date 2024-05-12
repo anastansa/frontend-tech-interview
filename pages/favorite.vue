@@ -6,7 +6,7 @@ import { QUESTION_LIST } from '../mock/mock.data';
 <template>
 	<div class="page">
 		<!--TODO replace mock data-->
-		<QuestionList :list="QUESTION_LIST.filter((item) => item.category_name === 'css')" />
+		<QuestionList :list="QUESTION_LIST.filter((item) => item.is_favorite === true)" />
 	</div>
 </template>
 
